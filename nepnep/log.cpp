@@ -2,31 +2,23 @@
 // Created by lee on 2022/10/10.
 //
 
-#include <string>
-
 #pragma once
-namespace nepnep
-{
-    class Logger
-    {
-    public:
-        Logger();
-    private:
-    };
 
-    class LogAppender
-    {
-    public:
-        virtual ~LogAppender();
+#include "log.h"
+namespace nepnep {
 
-    };
+void Logger::logging(LogLevel iLevel, LogEvent::LogEventPtr pEvent) {
 
-    class LogFormatter
-    {
+}
 
-    };
+void LogAppender::log(LogLevel iLevel, LogEvent::LogEventPtr pEvent) {
 
+}
 
+std::string LogFormatter::formatLog(LogEvent::LogEventPtr pEvent) {
+    return std::string();
+}
 
 
 }
+
