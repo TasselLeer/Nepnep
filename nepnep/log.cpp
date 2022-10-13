@@ -19,6 +19,5 @@ std::string LogFormatter::formatLog(LogEvent::LogEventPtr pEvent) {
     return std::string();
 }
 
-
 }
 
